@@ -14,7 +14,6 @@ export class Recorder {
 
         // Determine supported mime type for H.264/MP4
         const types = [
-            { mime: 'video/mp4', ext: 'mp4' },
             { mime: 'video/mp4;codecs=h264', ext: 'mp4' },
             { mime: 'video/webm;codecs=h264', ext: 'webm' },
             { mime: 'video/webm;codecs=vp9', ext: 'webm' },

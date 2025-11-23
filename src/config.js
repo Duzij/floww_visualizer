@@ -1,15 +1,15 @@
 export const VISUALIZER_CONFIG = {
-    fftSize: 2048,
-    smoothingTimeConstant: 0.15,
+    fftSize: 1024,
+    smoothingTimeConstant: 0.29,
     minDecibels: -90,
     maxDecibels: -10,
-
+    intensity: 2,
     waves: [
         {
             name: 'Bass',
             range: [20, 100],
             color: 'rgba(0, 168, 150, 0.5)', // Teal
-            amplitudeFactor: 1.2,
+            amplitudeFactor: 0.8,
             phaseShift: 0
         },
         {
@@ -30,14 +30,14 @@ export const VISUALIZER_CONFIG = {
             name: 'High Mids',
             range: [2000, 6000],
             color: 'rgba(120, 40, 140, 0.5)', // Purple
-            amplitudeFactor: 0.6,
+            amplitudeFactor: 1.2,
             phaseShift: 3
         },
         {
             name: 'Highs',
             range: [6000, 20000],
             color: 'rgba(180, 20, 80, 0.5)', // Magenta
-            amplitudeFactor: 0.5,
+            amplitudeFactor: 1.2,
             phaseShift: 4
         }
     ]
